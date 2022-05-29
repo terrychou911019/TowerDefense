@@ -451,6 +451,7 @@ void PlayScene::UIBtnClicked(int id) {
 bool PlayScene::CheckOccupied(int x, int y) {
     if (x < 0 || x >= MapWidth  || y < 0 || y >= MapHeight)
         return true;
+
     
     TileType tt = mapState[y][x];
     if (tt == TILE_WALL || tt == TILE_CANNON || tt == TILE_BLUE_CANNON) return true;
