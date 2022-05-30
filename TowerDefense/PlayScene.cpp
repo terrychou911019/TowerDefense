@@ -310,7 +310,7 @@ void PlayScene::OnKeyDown(int keyCode) {
 		// Hotkey for Speed up.
 		SpeedMult = keyCode - ALLEGRO_KEY_0;
         if (keyCode == ALLEGRO_KEY_0) 
-            al_set_timer_speed(timeleft_timer, 100000.0);
+            al_set_timer_speed(timeleft_timer, 1000000000000000000.0);
         else
             al_set_timer_speed(timeleft_timer, (float)(1.0 / (keyCode - ALLEGRO_KEY_0)));
 	}
