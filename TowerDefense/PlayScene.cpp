@@ -314,6 +314,9 @@ void PlayScene::OnKeyDown(int keyCode) {
         else
             al_set_timer_speed(timeleft_timer, (float)(1.0 / (keyCode - ALLEGRO_KEY_0)));
 	}
+    else if (keyCode = ALLEGRO_KEY_SPACE) {
+
+    }
 }
 
 void PlayScene::ReduceAmount(int id) {

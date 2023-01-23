@@ -56,7 +56,8 @@ void IceSpell::Update(float deltaTime) {
         al_stop_timer(melt_timer);
         al_set_timer_count(melt_timer, 0);
         Hit(INFINITY);
-        if (tgt != nullptr) tgt->Enabled = true;
+        if (tgt->id == 2 || tgt->id == 3) 
+            tgt->Enabled = true;
     }
 }
 

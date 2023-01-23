@@ -12,7 +12,7 @@
 
 //Defense(std::string imgDefense, float x, float y, float radius, float coolDown, int hp, int id, float shootRadius);
 BlueCannonDefense::BlueCannonDefense(float x, float y) :
-    Defense("play/BlueCannon.png", x, y, 20, 0.5, 50, 3, 425) {
+    Defense("play/BlueCannon.png", x, y, 20, 0.5, 50, 3, 600) {
     // Move center downward, since we the turret head is slightly biased upward.
     Anchor.y += 8.0f / GetBitmapHeight();
 }
